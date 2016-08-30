@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: halloSans;
+    src: url("media/hallo-sans/hallosans.otf");
+}
+
+@font-face {
+    font-family: halloSans;
+    src: url("media/hallo-sans/hallosansblack.otf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: halloSans;
+    src: url("media/hallo-sans/hallosanslight.otf");
+    font-weight: lighter;
+}
+
+html {
+    background: url("media/06062011308.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover;
+    font-family: halloSans;
+}
+
+p {
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.behindcontent {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 40em;
+    height: 100%;
+    opacity: 0.75;
+    filter: alpha(opacity=75);
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, 
+        rgba(255,255,255,1) 52%, 
+        rgba(255,255,255,0.4) 81%, 
+        rgba(255,255,255,0.02) 99%, 
+        rgba(255,255,255,0) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, 
+        color-stop(52%, rgba(255,255,255,1)), 
+        color-stop(81%, rgba(255,255,255,0.4)), 
+        color-stop(99%, rgba(255,255,255,0.02)), 
+        color-stop(100%, rgba(255,255,255,0)));
+    background: -webkit-radial-gradient(center, ellipse cover, 
+        rgba(255,255,255,1) 52%, 
+        rgba(255,255,255,0.4) 81%, 
+        rgba(255,255,255,0.02) 99%, 
+        rgba(255,255,255,0) 100%);
+    background: -o-radial-gradient(center, ellipse cover, 
+        rgba(255,255,255,1) 52%, 
+        rgba(255,255,255,0.4) 81%, 
+        rgba(255,255,255,0.02) 99%, 
+        rgba(255,255,255,0) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, 
+        rgba(255,255,255,1) 52%, 
+        rgba(255,255,255,0.4) 81%, 
+        rgba(255,255,255,0.02) 99%, 
+        rgba(255,255,255,0) 100%);
+    background: radial-gradient(ellipse at center, 
+        rgba(255,255,255,1) 52%, 
+        rgba(255,255,255,0.4) 81%, 
+        rgba(255,255,255,0.02) 99%, 
+        rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( 
+        startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+}
+
+.wrap {
+    /*  for the all encompasing div */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.header {
+    /*  for the top div */
+    position: absolute;
+    top: 0;
+    left: 7em;
+    text-align: center;
+    z-index: 1;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 1em;
+}
+
+.OpenYonder {
+    font-size: 4em;
+    color: #ff7243;
+    position: absolute;
+    left: 1.3em;
+    top: .4em;
+    min-width: 11em;
+}
+
+.content {
+    /*  for the background div containting everything between header and footer */
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 17em;
+    text-align: center;
+    min-width: 52em;
+    max-width: 66%;
+    margin: auto;
+    z-index: 1;
+}
+
+.main {
+    /*  for the div containing all the content */
+    position: relative;
+}
+
+.text {
+    position: relative;
+    float: right;
+    left: -38%;
+    width: 23em;       
+    text-align: left;
+    line-height: 1.5em;
+}
+
+#form {
+    position: relative;
+    float: left;
+    right: -65%;
+    padding-right: 3%;
+    padding-left: 4%;
+}
+
+#emailSubmit {
+    /*  the email submit form */
+    white-space: nowrap;
+    font-size: 1.3em;
+}
+
+.textin {
+    text-align: center;
+    font-family: halloSans;
+    font-size: 1em;
+    height: 1.2em;
+    margin-top: .5em;
+    margin-bottom: .1em;
+}
+
+.subin {
+    width: 7em;
+    background-color: #6D929B;
+    color: #ffffff;
+    font-family: halloSans;
+    font-size: 1em;
+    margin-top: .5em;
+}
+
+.alert {
+    color: #FF0080;
+    font-weight: bold;
+}
+
+.push {
+    min-height: 35em;
+    height: 90.5%;
+}
+
+.footer {
+    /*  the div containing the background of the footer */
+    font-size: small;
+    position: static;
+    margin: auto;
+    width: 90%;
+}
